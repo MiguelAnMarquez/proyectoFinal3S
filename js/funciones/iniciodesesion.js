@@ -57,3 +57,12 @@ function cerrarSesion() {
     window.location.href = "../index.html"
     localStorage.removeItem("usuarioLogeado")
 }
+
+function mostrarNombreDeUsuario(){
+    var usuarioLogeado = JSON.parse(localStorage.getItem("usuarioLogeado"))
+    var divNombreUsuario = document.getElementById("nombreVendedor")
+    label = document.createElement("label")
+    label.innerText = usuarioLogeado.nombreDeUsuario
+    
+    divNombreUsuario.appendChild(label)
+}
