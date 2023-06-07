@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosheader.css">
+    <link rel="stylesheet" href="../css/estilosgestiondesucursales.css">
+    <title>Gestión de Sucursales</title>
+    <script src="../js/funciones/iniciodesesion.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedorTituloPagina">
+            <label for="">Cinéfilos de Corazón</label>
+        </div>
+
+        <div class="contenedorBotonCerrarSesion">
+            <input type="button" value="Cerrar Sesión" onclick="cerrarSesion()">
+        </div>
+    </header>
+
+    <div class="bienvenidaGerente">
+        <h2>Bienvenido GERENTE</h2>
+    </div>
+
+    <div class="seleccionarSucursal">
+        <h3>Sucursal</h3>
+        <select>
+            <option selected disabled value="">Ciudad</option>
+        </select>
+    </div>
+
+    <div class="elementosModificables">
+        <div style="border: none;">
+            <h3>Localización:</h3>
+        </div>
+
+        <div style="border: none;">
+            <h3>Especificaciones:</h3>
+        </div>
+
+        <div style="border: none;">
+            <h3>Acciones:</h3>
+        </div>
+
+        <div>
+            <label for="">Ciudad:</label>
+            <select name="" id="">
+                <option selected disabled value=""></option>
+                <option value="">Sincelejo</option>
+            </select>
+
+        </div>
+
+        <div>
+            <label for="">Número de Trabajadores</label>
+            <input type="number">
+        </div>
+
+        <div class="botonesAcciones" style="border: none;">
+
+            <div style="display: flex; flex-direction: column;">
+                <input class="descartarCambios" type="button" value="Descartar Cambios">
+                <input class="guardar" type="button" value="Guardar Cambios">
+            </div>
+            
+        </div>
+
+        <div>
+            <label for="">Departamento:</label>
+            <select name="" id="">
+                <option selected disabled value=""></option>
+                <option value="">Sucre</option>
+            </select>
+
+        </div>
+
+        <div>
+            <label for="">Número de Salas: </label>
+            <input type="number">
+        </div>
+
+ 
+
+        <div>
+            <label for="">Dirección:</label>
+            <input type="text" name="" id="">
+        </div>
+
+        <div>
+            <label for="">¿Posee Cafeteria?:</label>
+            <select name="" id="">
+                <option disabled selected value=""></option>
+                <option value="">Sí</option>
+                <option value="">No</option>
+            </select>
+        </div>
+
+
+
+        <div>
+            <label for="">Barrio:</label>
+            <select name="" id="">
+                <option selected disabled value="">Barrio</option>
+                <option value="">El Bosque</option>
+                <option value="">El Cortijo</option>
+                <option value="">El Diamante</option>
+                <option value="">El Edén</option>
+                <option value="">El Paraíso</option>
+                <option value="">El Prado</option>
+                <option value="">La Aurora</option>
+                <option value="">La Esperanza</option>
+                <option value="">La Floresta</option>
+                <option value="">La Granja</option>
+                <option value="">La Palma</option>
+                <option value="">La Paz</option>
+                <option value="">La Pradera</option>
+                <option value="">La Unión</option>
+                <option value="">Las Acacias</option>
+                <option value="">Las Brisas</option>
+                <option value="">Las Colinas</option>
+                <option value="">Las Delicias</option>
+                <option value="">Las Margaritas</option>
+                <option value="">Las Orquídeas</option>
+                <option value="">Las Violetas</option>
+                <option value="">Los Almendros</option>
+                <option value="">Los Angeles</option>
+                <option value="">Los Cocos</option>
+                <option value="">Los Laureles</option>
+                <option value="">Los Olivos</option>
+                <option value="">San Antonio</option>
+                <option value="">San Carlos</option>
+                <option value="">San Fernando</option>
+                <option value="">San Francisco</option>
+                <option value="">San José</option>
+                <option value="">San Juan</option>
+                <option value="">San Marcos</option>
+                <option value="">San Miguel</option>
+                <option value="">San Vicente</option>
+                <option value="">Santa Fe</option>
+                <option value="">Santa Rosa</option>
+                <option value="">Villa del Sol</option>
+                <option value="">Villa Fanny</option>
+                <option value="">Villa Karla</option>
+                <option value="">Villa Mady</option>
+                <option value="">Villa Rocío</option>
+                <option value="">Cielo Azul</option>
+                <option value="">Ciudadela Universitaria</option>
+                <option value="">Colinas de Betania</option>
+                <option value="">El Reposo</option>
+                <option value="">San Vicente</option>
+                <option value="">Santa Rosa</option>
+                <option value="">Villa Mady</option>
+                <option value="">Villa Rocío</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Código:</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

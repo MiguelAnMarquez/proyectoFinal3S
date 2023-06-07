@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tiquetes</title>
+    <link rel="stylesheet" href="../css/compraVirtual.css">
+    <script src="../js/contarSillas.js"></script>
+    <script src="../js/funciones/iniciodesesion.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedorTituloPagina">
+            <label for="">Cinéfilos de Corazón</label>
+        </div>
+        <div class="labelUsuario">
+            <label for="">Usuario: </label>
+        </div>
+
+        <div class="contenedorBotonCerrarSesion">
+            <input type="button" value="Cerrar Sesión" onclick="cerrarSesion()">
+        </div>
+    </header>
+
+    <header class="header_2">
+        <div class="labelComprar">
+            <label for="">Comprar Tiquetes para < pelicula ></label>
+        </div>
+      
+
+    </header>
+
+    <menu class="menu">
+        <div class="divMenu">
+             
+            <label for="numeroSala">Sala:</label>
+            <select style="font-size: 10px; height: 30px; width:260px;" name="numeroSala" id="numeroSala">
+                    <option value="sala 1">Sala 1</option>
+                    <option value="sala 2">Sala 2</option>
+                    <option value="sala 3">Sala 3</option>
+                    <option value="sala 4">Sala 4</option>
+                    <option value="sala 5">Sala 5</option>
+            </select>  <br><br>
+
+            <label for="horario">Horario:</label>
+            <select style="font-size: 10px; height: 30px; width:236px;" name="horario" id="horario">
+                <option value="hora1">7:00 A.M</option>
+                <option value="hora2">9:30 A.M</option>
+                <option value="hora3">4:00 P.M</option>
+                <option value="hora4">8:00 P.M</option>
+            </select>   <br><br>
+
+            Fecha:
+            <input type="date" class="fecha" name="fechaPelicula" id=""><br><br>
+
+            <label for="numeroTiquetes">Número tiquetes:</label>
+            <select style="font-size: 10px; height: 30px; width:170px;" name="numeroTiquetes" id="numeroTiquetes">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>  <br><br>
+           
+            
+            <label for="tipoPago">Forma de pago:</label>
+            <select style="font-size: 10px; height: 30px; width:183px;" name="tipoPago" id="tipoPago">
+                <option value="tarjeta">Tarjeta</option>
+                <option value="efectivo">Efectivo</option>
+            </select>   <br><br>
+
+            <button class="botonCancelar">Cancelar</button> <br><br>
+            <button class="botonComprar">Comprar</button> <br><br>
+            <label for="">Fecha de venta: </label>
+
+        </div>
+
+        <div class="baseDeSillasyAsientos">
+
+            <div class="ContenedortituloAsientos">
+                <label for="">Asientos: </label>
+                <label id="contador">0</label>
+                
+                <div class="space">
+                    <img src="../recursos/silla (7).png" alt="" height="20px" width="20px">
+                </div>
+            </div>
+
+            <div class="ContenedorSillas">
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()" >
+                        <img  id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">A1</label>
+                    </button><br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">A2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">A3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img  src="../recursos/silla (6).png" alt="">
+                        <label for="">A4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">A5</label>
+                    </button><br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img  src="../recursos/silla (6).png" alt="">
+                        <label for="">B1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">B2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">B3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (7).png" alt="">
+                        <label for="">B4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">B5</label>
+                    </button> <br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">C1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">C2</label>
+                    </button> <br><br>
+                    <button type="button"onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">C3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">C4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (7).png" alt="">
+                        <label for="">C5</label>
+                    </button> <br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">D1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">D2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">D3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">D4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">D5</label>
+                    </button> <br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">E1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">E2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">E3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">E4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">E5</label>
+                    </button> <br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (7).png" alt="">
+                        <label for="">F1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">F2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">F3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">F4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img id="cambioImg" src="../recursos/silla (5).png" alt="">
+                        <label for="">F5</label>
+                    </button> <br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (5).png" alt="">
+                        <label for="">G1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (5).png" alt="">
+                        <label for="">G2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (5).png" alt="">
+                        <label for="">G3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">G4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">G5</label>
+                    </button> <br><br>
+                   
+                </div>
+                <div class="espacioSillas">
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (7).png" alt="">
+                        <label for="">H1</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (7).png" alt="">
+                        <label for="">H2</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (5).png" alt="">
+                        <label for="">H3</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (6).png" alt="">
+                        <label for="">H4</label>
+                    </button> <br><br>
+                    <button type="button" onclick="conteoSillas()">
+                        <img src="../recursos/silla (5).png" alt="">
+                        <label for="">H5</label>
+                    </button> <br><br>
+                   
+                </div>
+            </div>
+
+
+        </div>
+
+
+        </div>
+        
+
+        
+
+       
+    </menu>
+
+
+</body>
+</html>

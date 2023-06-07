@@ -1,0 +1,109 @@
+.header{
+    display: grid;
+    grid-template-columns: 70% 10% 20%;
+    margin-top: 2% ;
+    border-bottom: 1px solid #000;
+    margin-bottom: 2% ;
+}
+
+.contenedorBotonCerrarSesion{
+    display: flex;
+    justify-content: end;
+    margin-right: 2% ;
+    margin-bottom: 2%;
+}
+
+.contenedorBotonCerrarSesion > input{
+    padding: 2% 5% 2% 5%;
+}
+
+.contenedorTituloPagina{
+ margin-left: 2%;
+ font-size: 25px;
+}
+
+.header_2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 1% ;
+  
+}
+
+.labelComprar{
+    font-size:20px;
+    margin-left: 6%;
+ 
+}
+
+.labelUsuario{
+    font-size:15px;
+    margin-top: 2%;
+    align-items: end;
+}
+
+.menu{
+    margin-top: 3%;
+    margin-left: 6%;
+    display: flex;
+}
+
+.divMenu{
+    margin-top: 1%; 
+    font-size: 16px;
+}
+
+.botonCancelar{
+    height: 35px;
+    width: 300px;
+    margin-top: 2%;
+    font-size: 15px;
+    
+}
+
+.botonComprar{
+    height: 35px;
+    width: 300px;
+    margin-top: 2%;
+    font-size: 15px;
+    
+    background-color: rgb(194, 6, 6);
+    color: #ffffff
+}
+
+.baseDeSillasyAsientos{
+    
+    margin-top: 3%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 90%;
+}
+.ContenedorSillas{
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 1%;
+    margin-bottom: 100px;
+}
+
+.ContenedortituloAsientos{
+    display: grid;
+    grid-template-columns: 10% 2% 88%;
+    margin-top: 2% ;
+    font-size: 15px;
+}
+
+.espacioSillas{
+    margin: 10px;
+}
+
+.text{
+    height: 25px;
+    width: 293px;
+}
+
+.fecha{
+    height: 25px;
+    width: 242px;
+    font-size: 10px;
+}

@@ -1,0 +1,57 @@
+.header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3% ;
+}
+
+.contenedorBotonCerrarSesion{
+    display: flex;
+    justify-content: end;
+    margin-right: 2% ;
+}
+
+.contenedorBotonCerrarSesion > input{
+    padding: 2% 5% 2% 5%;
+}
+
+.contenedorTituloPagina{
+ margin-left: 2%;
+ font-size: 25px;
+}
+
+
+.contenedorTituloSucursal{
+    margin: 15px;
+    font-size: 15px;
+    justify-content:end;
+    margin-left: 180px;
+}
+
+.contenedorImagen{
+    display: flex;
+    margin-top: 2%;
+    flex-grow: 0;
+}
+
+.contenedorTituloCartelera{
+    margin-left: 1%;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.contenedorCartelera{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.contenedorCartelera > div{
+   justify-content: center;
+    text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+body{
+    background-image: url('../recursos/imagenes/bg-login.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
+
+.contenedorPadre{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 90vh;
+}
+
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    margin-bottom: 3% ;
+    padding: 1% 2% 1% 2%;
+}
+
+.btn-acceder{
+    background-color: #0c398a ;
+    color: white;
+    padding: 1% 13% 1% 13%;
+    border-radius: 5px;
+}
+
+.registrarse{
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin-top: 1%;
+    text-align: center;
+}
+
+
+

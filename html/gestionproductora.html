@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleproductora.css">
+    <title>Gestion de Productoras</title>
+    <script src="../js/objetos/Productora.js"></script>
+    <script src="../js/funciones/handlerProductora.js"></script>
+    <script src="../js/funciones/iniciodesesion.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedorTituloPagina">
+            <label for="">
+                <h3 style="margin-top: 9px;margin-bottom: 9px;margin-left: 2%;">Cinéfilos de Corazón</h3>
+            </label>
+        </div>
+
+        <div class="contenedorBotonCerrarSesion">
+            <input class="logoutb" type="button" value="Cerrar Sesión"
+                style="height: 35px;width: 120px;margin-top: 2px;background-color: white;" onclick="cerrarSesion()">
+        </div>
+    </header>
+
+    <hr>
+
+    <label>
+        <h1 class="tituloSeccion">Gestión de Productoras:</h1>
+    </label>
+
+    <hr>
+    <label class="tituloSeccion"><strong>Listado de Productoras:</strong></label>
+    <div class="tableWrapper">
+        <table
+            style="width:96%;margin-top: 10px;margin-left: 2%;margin-right: 2%; border-collapse: collapse;box-shadow: 0px 0px 3px black;"
+            border="1" id="tablaProductoras">
+            <thead>
+                <tr>
+                    <th class="customTH">Codigo</th>
+                    <th class="customTH">Nombre</th>
+                    <th class="customTH">Pais de Residencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Agregar Nuevo</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form onsubmit="registrarProductora();return false;" id="formulario">
+        <hr style="margin-top: 15px;">
+        <text class="tituloSeccion"><strong>Editor de Productoras:</strong></text>
+        <input type="submit" value="Guardar" class="editorbutton"
+            style="margin-right: 10px;color: white;background-color: #ca0d0d;height: 30px;">
+        <input type="button" value="Limpiar" class="editorbutton" style="height: 30px;background-color: white;"
+            onclick="limpiarFormulario()">
+        <hr>
+
+        <div class="flexContenedor">
+            <div style="padding-top: 0px;">
+                <label style="font-size: 18px;margin-right: 10px;"> Codigo:</label>
+                <input type="text" style="width: 12%;" id="codigo" pattern="[A-Za-z0-9]{5}" placeholder="5 Caracteres." required> <br> <br>
+                <label style="margin-right: 10px"> Nombre:</label>
+                <input type="text" style="width: 30%;" id="nombre" required> <br> <br>
+                <label style="font-size: 13px;margin-right: 30px;"> Pais de</label>
+                <input type="text" style="transform: translateY(49%);width: 30%;" id="paisdr" required><br>
+                <label style="font-size: 13px;">Residencia:</label>
+                <br> <br>
+                <label style="font-size: 13px;margin-right: 10px"> Teléfonos:</label>
+                <select name="telefono" id="telefonos">
+                </select>
+                <input type="text" style="width: 10%;" placeholder="xxx-xxxxxxx" id="teleid">
+                <input class="extrabutton" type="button" value="Guardar" onclick="añadirTelefono()"><br> <br>
+                <label style="font-size: 13px;margin-left: 2px;margin-right: 10px"> Celulares:</label>
+                <select name="celular" id="celulares">
+                </select>
+                <input type="text" style="width: 10%;" placeholder="xxx-xxxxxxx" id="celuid">
+                <input class="extrabutton" type="button" value="Guardar" onclick="añadirCelular()"><br>
+            </div>
+
+            <div class="vertical">
+                <label> Correo<br>Electronico:</label><br><br>
+                <input type="email" placeholder="email@adress.com" id="email" required> <br> <br>
+                <label> Representante:</label><br><br>
+                <input type="text" placeholder="Nombre Representante" id="representante" required> <br>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stylecartelera.css">
+  <title>Administracion de Cartelera</title>
+  <script src="../js/objetos/Cartelera.js"></script>
+  <script src="../js/funciones/handlerCartelera.js"></script>
+  <script src="../js/funciones/iniciodesesion.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="contenedorTituloPagina">
+      <label for="">
+        <h3 style="margin-top: 9px;margin-bottom: 9px;margin-left: 2%;">Cinéfilos de Corazón</h3>
+      </label>
+    </div>
+
+    <div class="contenedorBotonCerrarSesion">
+      <input class="logoutb" type="button" value="Cerrar Sesión"
+        style="height: 35px;width: 120px;margin-top: 2px;background-color: white;" onclick="cerrarSesion()">
+    </div>
+  </header>
+  <hr>
+
+  <h1> Administrar Carteleras </h1>
+  <hr>
+
+  <div class="tableWrapper">
+    <table
+      style="width:96%;margin-top: 10px;margin-left: 2%;margin-right: 2%; border-collapse: collapse;box-shadow: 0px 0px 3px black;"
+      border="1" id="tablaCartelera">
+      <thead class="newHeader">
+        <tr>
+          <th>Sala</th>
+          <th>Pelicula</th>
+          <th>Horario</th>
+          <th>Fecha Inicio</th>
+          <th>Fecha Fin</th>
+          <th>Mostrar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="contenedorBotonCerrarSesion">
+    <input class="extrabutton" type="button" value="Actualizar Cambios" style="margin-right: 17px;margin-top: 10px;">
+  </div>
+
+  <hr>
+  <h2>Añadir Elementos</h2>
+
+  <hr width="800">
+  <form onsubmit="registrarECartelera();return false;" id="formulario">
+    <div class="flexContenedor">
+      <div>
+        <label>Sala</label> <br>
+        <select name="Sala" id="sala" style="justify-content: center;height: 30px;width: 140px;" required>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+        </select>
+      </div>
+      <div>
+        <label for="nombre">Pelicula</label> <br>
+        <select name="Nombre" id="nombre" style="height: 30px;width: 140px;" required>
+          <option value="">Pac Man</option>
+          <option value="">Jhon Wick</option>
+          <option value=""> Rapidos Y Furiosos</option>
+          <option value=""> Frozen</option>
+        </select>
+      </div>
+      <div>
+        <label> Hora Incio</label> <br>
+        <input type="text" style="height: 24px;width: 200px;" id="HInicio" required>
+      </div>
+      <div>
+        <label> Fecha Inicio</label> <br>
+        <input type="date" name="Fecha Inicio" id="FInicio" style="height: 26px;width: 160px;" required>
+      </div>
+      <div>
+        <label> Fecha Fin </label> <br>
+        <input type="date" name="Fecha Fin" id="FFin" style="height: 26px;width: 160px;" required>
+      </div>
+    </div> <br> <br>
+
+    <div class="anadir">
+      <input type="submit" value="Añadir" class="extrabutton" style="width: 125px;">
+    </div>
+
+    <div class="checkbox" style="margin-right: 6px;">
+      <input type="checkbox" name="MostrarPeli" id="mostrarPeli" style="cursor: pointer;">&nbsp;<label
+        style="cursor: pointer;" onclick="checkboxToggle()">Mostrar Pelicula</label>
+    </div>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+
+.bienvenidaGerente{
+    display: flex;
+    justify-content: center;
+}
+
+.seleccionarSucursal{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.seleccionarSucursal > select{
+    height: 100%;
+    margin-left: 1%;
+}
+
+.elementosModificables{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0% 10% 0% 10%;
+}
+
+.elementosModificables > div{
+    padding-bottom: 2%;
+    border-right: 1px solid black; 
+    margin-right: 10%;
+}
+
+.botonesAcciones{
+    display: grid;
+    grid-column: 3 / span 1 ;
+    grid-row: 2 / span 5;
+    
+}
+
+.descartarCambios{
+ padding: 5% ;
+ margin-bottom: 10%;
+
+}
+
+.guardar{
+    padding: 5% ;
+    color: white;
+    background-color: #ca0d0d;
+ 
+}
+

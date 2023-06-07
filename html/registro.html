@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosregistro.css">
+    <script src="../js/objetos/cliente.js"></script>
+    <script src="../js/funciones/registro.js"></script>
+    <title>Registro</title>
+
+</head>
+<body>
+
+<div style="display: flex; justify-content: center;" >
+    <div class="titulo">
+        <center>
+        <h1>¡Únete a nuestro club de Cinéfilos!</h1>
+        </center>
+    </div>
+</div>
+    
+    
+<div style="width: 100%;">
+
+
+</div>
+
+<div style="margin-top: 1%; padding-left: 30%; padding-right: 30%;"  >
+    <form action="javascript:registrarCliente()" class="formulario" >
+
+
+        <input required type="number" class="item1" style="height: 130%" placeholder="Cédula" id="cedula" autofocus >
+
+        <input required type="text" class="item2" style="margin: 10% 5% 0% 0%; height: 50%;" placeholder="nombre" id="nombre">
+        
+        <input required type="text" class="item3" style="margin: 10% 0% 0% 5%; height: 50%" placeholder="apellidos" id="apellidos">
+        
+        <input required type="email" class="item4" style="margin: 4% 0% 0% 0%; height: 50%;" placeholder="Correo electrónico" id="correoElectronico">
+
+        <input required type="password" class="item5" style="margin: 4% 0% 0% 0%; height: 50%;" placeholder="Contraseña" id="contrasenia">
+
+        <input required pattern="\d{10}" type="tel" class="item6" style="margin: 4% 0% 0% 0%; height: 50%;" placeholder="Número de celular" id="numeroDeCelular">
+        
+        <label required for="" class="item7" style="color: white; margin: 9% 0% 0% 0%; height: 50%;">Fecha de nacimiento:</label>
+        
+        <input required type="date" name=""  class="item8" style="margin: 5% 0% 0% 0%; height: 60%;" id="fechaNacimiento">
+
+        <select required name=""  class="item9" style="margin: 5% 5% 0% 0%; height: 100%;" id="tipoDireccion">
+            <option selected disabled value="">Selecciona Calle-Carrera etc.</option>
+            <option value="Calle">Calle</option>
+            <option value="Carrera">Carrera</option>
+            <option value="Diagonal">Diagonal</option>
+            <option value="Transversal">Transversal</option>
+            <option value="Avenida">Avenida</option>
+        </select>
+
+        <input required type="text" name=""  class="item10" style="margin: 5% 0% 0% 5%; height: 80%;" placeholder="30 # 50-22" id="direccion">
+
+        <select required name="" class="item11" style="margin: 5% 0% 0% 0%; height: 70%;" id="barrio">
+            <option selected disabled value="">Barrio</option>
+            <option value="El Bosque">El Bosque</option>
+            <option value="El Cortijo">El Cortijo</option>
+            <option value="El Diamante">El Diamante</option>
+            <option value="El Edén">El Edén</option>
+            <option value="El Paraíso">El Paraíso</option>
+            <option value="El Prado">El Prado</option>
+            <option value="La Aurora">La Aurora</option>
+            <option value="La Esperanza">La Esperanza</option>
+            <option value="La Floresta">La Floresta</option>
+            <option value="La Granja">La Granja</option>
+            <option value="La Palma">La Palma</option>
+            <option value="La Paz">La Paz</option>
+            <option value="La Pradera">La Pradera</option>
+            <option value="La Unión">La Unión</option>
+            <option value="Las Acacias">Las Acacias</option>
+            <option value="Las Brisas">Las Brisas</option>
+            <option value="Las Colinas">Las Colinas</option>
+            <option value="Las Delicias">Las Delicias</option>
+            <option value="Las Margaritas">Las Margaritas</option>
+            <option value="Las Orquídeas">Las Orquídeas</option>
+            <option value="Las Violetas">Las Violetas</option>
+            <option value="Los Almendros">Los Almendros</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Los Cocos">Los Cocos</option>
+            <option value="Los Laureles">Los Laureles</option>
+            <option value="Los Olivos">Los Olivos</option>
+            <option value="San Antonio">San Antonio</option>
+            <option value="San Carlos">San Carlos</option>
+            <option value="San Fernando">San Fernando</option>
+            <option value="San Francisco">San Francisco</option>
+            <option value="San José">San José</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Marcos">San Marcos</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="San Vicente">San Vicente</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Villa del Sol">Villa del Sol</option>
+            <option value="Villa Fanny">Villa Fanny</option>
+            <option value="Villa Karla">Villa Karla</option>
+            <option value="Villa Mady">Villa Mady</option>
+            <option value="Villa Rocío">Villa Rocío</option>
+            <option value="Cielo Azul">Cielo Azul</option>
+            <option value="Ciudadela Universitaria">Ciudadela Universitaria</option>
+            <option value="Colinas de Betania">Colinas de Betania</option>
+            <option value="El Reposo">El Reposo</option>
+        </select> 
+    
+        <div class="item12" style="display: flex; justify-content: center; margin: 5% 0% 0% 0%; ">
+
+            <input type="submit" value="Registrarse" class="botonregistro">
+        </div>
+    
+    </form>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+        
+        <label for="" style="color: white;">---------------- ó ----------------</label>
+        <label for="" style="color: white;">¿Ya tienes una cuenta?</label>
+        <a href="iniciodesesion.html" style="color: red">Inicia Sesión</a>
+    </div>
+    
+
+
+</div>
+
+<input type="button" value="ELIMINAR INFO CLIENTES" onclick="borrarDatos()">
+
+
+</body>
+</html>

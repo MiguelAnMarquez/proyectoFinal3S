@@ -1,0 +1,27 @@
+.bienvenidoAdministrador{
+    display: flex;
+    justify-content: center;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.botonIzquierda{
+    display: flex; 
+    justify-content: end; 
+}
+
+.botonIzquierda > input{
+    margin-right: 4%;
+}
+
+.botonDerecha > input{
+    margin-left: 4%;
+}
+
+.botones > div > input{
+    margin-bottom: 3%;
+    padding: 2% 5% 2% 5%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosheader.css">
+    <link rel="stylesheet" href="../css/estilosmenuadministrador.css">
+    <script src="../js/funciones/iniciodesesion.js"></script>
+    <title>Menu Administrador</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedorTituloPagina">
+            <label for="">Cinéfilos de Corazón</label>
+        </div>
+
+        <div class="contenedorBotonCerrarSesion">
+            <input type="button" value="Cerrar Sesión" onclick="cerrarSesion()">
+        </div>
+    </header>
+
+    <div class="bienvenidoAdministrador">
+        
+        <h2>
+            Bienvenido ADMINISTRADOR
+        </h2>
+        
+    </div>
+
+    <div class="botones">
+        <div class="botonIzquierda">
+            <input type="button" value="Administrar Carteleras" onclick="window.location.href = 'admicartelera.html'">
+        </div>
+
+        <div class="botonDerecha">
+            <input type="button" value="Gestión de productoras" onclick="window.location.href = 'gestionproductora.html'">
+        </div>
+
+        <div class="botonIzquierda">
+            <input type="button" value="Gestión de películas" onclick="window.location.href = 'gestionPeliculas.html'">
+
+        </div>
+
+        <div class="botonDerecha">
+            <input type="button" value="Registro de empleados" onclick="window.location.href = 'registroEmpleados.html'">
+        </div>
+
+    </div>
+
+
+</body>
+</html>

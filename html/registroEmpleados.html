@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/funciones/registroADMINS.js"></script>
+    <script src="../js/objetos/usuarios.js"></script>
+    <title>REGISTRO OCULTO</title>
+</head>
+
+<body>
+    <h1>REGISTRO DE ADMIN, GERENTE Y VENDEDORES</h1>
+    <form action="javascript:registrar()">
+
+        <input required type="text" autofocus placeholder="Nombre de usuario" id="nombreUsuario">
+        <input required type="password" placeholder="Contraseña" id="contrasenia">
+
+        <select required name="" id="rol">
+            <option disabled selected value="">ROL</option>
+            <option value="Vendedor">Vendedor</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Administrador">Administrador</option>
+        </select>
+
+        <input type="submit" value="Registrar">
+
+    </form>
+
+    <input style="margin-top: 5%;" type="button" value="ELIMINAR TODOS LOS USUARIOS DE VENDEDOR, GERENTE Y ADMNISTRADOR" onclick="eliminarUsuarios()">
+
+
+</body>
+
+</html>

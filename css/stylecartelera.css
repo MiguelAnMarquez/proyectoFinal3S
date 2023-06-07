@@ -1,0 +1,107 @@
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 0px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contenedorBotonCerrarSesion {
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenedorTituloPagina {
+    margin-left: 2%;
+}
+
+.flexContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.flexContenedor>div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.anadir {
+    display: flex;
+    justify-content: center;
+
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+}
+
+.logoutb {
+    transition-duration: 0.4s;
+}
+
+.logoutb:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ca0d0d;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logoutb:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.tableWrapper {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+.newHeader>tr>th {
+    top: 0px;
+    position: sticky;
+    background-color: #9e9e9e;
+    color: white;
+}
+
+.extrabutton {
+    color: white;
+    background-color: #ca0d0d;
+    transition-duration: 0.4s;
+    height: 26px;
+    margin-bottom: 2px;
+  }
+  
+  .extrabutton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ca0d0d;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .extrabutton:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }

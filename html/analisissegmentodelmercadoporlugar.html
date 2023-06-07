@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosheader.css">
+    <link rel="stylesheet" href="../css/estilosanalisissegmento.css">
+    <script src="../js/funciones/iniciodesesion.js"></script>
+    <script src="../js/funciones/segmentodemercadoporlugar.js"></script>
+    <title>Analisis segmento del mercado por lugar</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedorTituloPagina">
+            <label for="">Cinéfilos de Corazón</label>
+        </div>
+
+        <div class="contenedorBotonCerrarSesion">
+            <input type="button" value="Cerrar Sesión" onclick="cerrarSesion()">
+        </div>
+    </header>
+
+    <div class="contenido">
+
+
+        <form action="javascript:generarGrafica()" class="contenidoIzquierda">
+            <h3>Segmento por Edades</h3>
+            <select name="" id="rangoEdad" required>
+                <option selected disabled value=""> Selecciona</option>
+                <option value="ninos">Niños (0-12 Años)</option>
+                <option value="adolescente">Adolescente (13-18 Años)</option>
+                <option value="adulto">Adultos (19-50 Años)</option>
+                <option value="adultoMayor">Adulto mayor (Mayor a 50 Años)</option>
+            </select>
+            <input class="btngenerarGrafica" type="submit" value="Generar Grafica">
+
+        </form>
+
+
+        <div class="contenidoDerecha">
+            <div class="identificadoresDeColores" id="identificadorDeColores">
+
+            </div>
+
+
+
+            <div class="graficaTorta" id="graficaTorta">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
